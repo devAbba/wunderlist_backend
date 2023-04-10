@@ -107,4 +107,3 @@ npm run start-dev
 
 - Route: '/users/logout'
 - Method: GET
-# wunderlist_backend
