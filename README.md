@@ -17,7 +17,7 @@ npm run start-dev
 ---
 
 ## Base URL
-- https://wild-cyan-bullfrog-tutu.cyclic.app/
+- https://wunderlist-5xl3.onrender.com
 
 
 ## Models
