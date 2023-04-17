@@ -27,7 +27,7 @@ usersRouter.post('/signup', (req, res) => {
 
 
 // handles the login request for existing users
-usersRouter.post('/login', passport.authenticate('local', { failureRedirect: '/users/login' }), (req, res) => {
+usersRouter.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), (req, res) => {
     res.status(200).json({
         status: true,
         user: req.user

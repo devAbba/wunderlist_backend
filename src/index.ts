@@ -7,6 +7,7 @@ import User from './models/users.model'
 import usersRouter from './routes/users.route'
 import connectDB from './database/mongodb'
 import isLoggedIn from './middleware/authMW'
+import { uuid } from 'uuidv4'
 
 const cors = require('cors')
 const passport = require('passport')
@@ -30,7 +31,7 @@ app.use(cookieSession({
 }))
 
 app.use(session({
-    secret: 'secret',
+    secret: uuid(),
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 60 * 60 * 1000 } // 1 hour
